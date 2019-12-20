@@ -1,0 +1,20 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "Find your friend match based on a series of questions that you answer.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stappbot/Friend-Finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stappbot/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/stappbot/Friend-Finder#readme"
+}
