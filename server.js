@@ -4,7 +4,7 @@ var express = require("express");
 ​var bodyParser = require("body-parser");
 var app = express();
 ​
-var PORT = process.env.PORT || 8040;
+var PORT = process.env.PORT || 8080;
 
 //JSON parser
 var jsonParser = bodyParser.json()
@@ -15,7 +15,7 @@ app.use(bodyParser.raw({type:"application/vdn.custom-type"}))
 app.use(bodyParser.text({type:"text/html"}))
 
 require("./app/routing/html-routes.js")(app);
-
+require("./app/routing/api-routes.js")(app);
 ​
 // app.use(express.urlencoded({ extended: true }));
 // app.use(express.json());
