@@ -18,7 +18,10 @@ var friends = [
     scores: ["4", "2", "1", "5", "4", "3", "2", "2", "5", "4"]
   },
   {
-    name: "Maude the Cat"
+    name: "Maude the Cat",
+    photo:
+      "https://i.pinimg.com/736x/f9/00/02/f90002100363382d72357123b8615e30.jpg",
+    scores: ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3"]
   }
 ];
 
