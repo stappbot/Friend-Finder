@@ -16,6 +16,9 @@ var friends = [
     photo:
       "https://blogs-images.forbes.com/jvchamary/files/2016/09/ground_pangolin-1200x800.jpg",
     scores: ["4", "2", "1", "5", "4", "3", "2", "2", "5", "4"]
+  },
+  {
+    name: "Maude the Cat"
   }
 ];
 

@@ -1,15 +1,24 @@
-// const express = require("express");
-// const bodyParser = require("body-parser");
-// const app = express();
-​
-// const PORT = process.env.PORT || 8080;
+const express = require("express");
+const bodyParser = require("body-parser");
+const friends = require("./app/data/friends");
+const path = require("path");
 
-// app.use(bodyParser.urlencoded({extended: true}));
-// app.use(bodyParser.json({type: "application/*+json"}))
-// app.use(bodyParser.raw({type:"application/vdn.custom-type"}))
-// app.use(bodyParser.text({type:"text/html"}))
+const app = express();
 
-// require("./app/routing/htmlRoutes.js")(app);
-// require("./app/routing/apiRoutes.js")(app);
+app.use(bodyParser.json());
 
-// app.listen(PORT, () => console.log("App listening on PORT: " + PORT));
+app.get("/api/friends", function(req, res) {
+  res.send(friends);
+});
+
+app.post("/api/friends", function(req, res) {
+  res.send(req.body);
+});
+
+app.get("/survey", function(req, res) {
+  res.sendFile(path.resolve(__dirname, "app/public/survey.html"));
+});
+
+app.listen(3000, function() {
+  console.log("Server started on port 3000");
+});
